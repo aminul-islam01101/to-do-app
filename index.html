@@ -8,7 +8,45 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
+    <section class="container">
+      <header>
+        <img src="/wr logo.png" alt="" />
+        <h1>to-do-app</h1>
+      </header>
+      <form class="new-task">
+        <label for="input">Add New Task</label>
+        <input type="text" id="input" />
+        <button type="submit">Add Task</button>
+      </form>
+      <section class="tasks">
+        <div class="incomplete-tasks task-list">
+          <h2>incomplete tasks</h2>
+          <ul>
+            <li>
+              <input type="checkbox" id="check-box" />
+              <label for="check-box">Task name</label>
+            </li>
+            <li>
+              <input type="checkbox" id="check-box" />
+              <label for="check-box">Task name</label>
+            </li>
+            <li>
+              <input type="checkbox" id="check-box" />
+              <label for="check-box">Task name</label>
+            </li>
+          </ul>
+        </div>
+        <div class="complete-tasks task-list">
+          <h2>complete tasks</h2>
+          <ul>
+            <li>
+              <label for="button">Task name</label>
+              <button id="button" type="button">Delete</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
     <script src="/main.js"></script>
   </body>
 </html>
